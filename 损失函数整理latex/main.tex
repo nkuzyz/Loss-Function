@@ -1,0 +1,80 @@
+%TEX
+% Sun Nov 07 12:04:37 EST 2021
+% ++++++++++++++++++++++++++++++++++++++++++++++++++
+% North American GeoGebra Journal LaTeX template file.  
+%            :  Template Control File  
+%            :  
+%            :  LaTeX environment. Read the README.md file
+%            :  Note configs.tex file for packages.  
+%            :  MIT License.
+%            :
+%            : Quinlan, J. 
+% ++++++++++++++++++++++++++++++++++++++++++++++++++
+% FOR ASSISTANCE TRY: 
+%		: http://en.wikibooks.org/wiki/LaTeX/
+%		: https://www.ctan.org/
+%              
+
+\def\pagenum{1}
+\def\vol{1}
+\def\issue{1}
+
+% ----------------------------- %
+\input{configs}
+\input{coding}
+% ----------------------------- &
+
+% 这是为了显示中文字体
+\usepackage[UTF8]{ctex} % 正文中文字体
+\usepackage{authblk}
+\renewcommand\Authands{ and }
+%\setCJKmainfont{\songti}  
+%\zihao{-4}\linespread{1.5}\selectfont
+
+% Edit 33 - 37
+\def\thetitle{\uppercase{机器学习损失函数总结}} 
+\def\authorOne{\authorfont{2013747张怡桢}}
+\def\institutionOne{\subauthorfont{软件学院，南开大学}}
+
+% ----------------------------- %
+\begin{document}
+% ----------------------------- %
+
+\interfootnotelinepenalty=100000
+
+
+% ----------------------------- %
+%  Header: Title, author
+% ----------------------------- %
+\title{\TitleFont{\thetitle}}
+\author[]{\authorOne}
+
+\affil[]{\institutionOne}
+
+
+\vspace{-1mm}
+\date{}                                                 
+\maketitle                                              
+
+
+
+% ----------------------------- %
+% Abstract
+% ----------------------------- %
+\input{abstract}
+\thispagestyle{fancy}
+
+
+% ----------------------------- %
+% Sections
+% ----------------------------- %
+\input{body}
+
+% ----------------------------- %
+% References:  BibTeX
+% ----------------------------- %
+%\bibliography{refs.bib}
+%\bibliographystyle{apalike}
+
+
+\end{document} 
